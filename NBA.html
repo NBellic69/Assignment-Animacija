@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zacarani krug</title>
+
+    <style>
+        #teletabis {
+            width: 420px;
+            height: 380px;
+            margin: 0 auto;
+            background: black;
+            padding-left: 0px;
+        }
+
+        #lucian {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 666px;
+            top: 98px;
+            background: linear-gradient(#fb5dad 10%, #55fb9f 66%, #55fb9f 66%, #b97aff 90%);
+            border-radius: 100%;
+            animation-name: panda;
+            animation-delay: 2s;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            filter: blur(1px);
+            animation-timing-function: linear;
+            animation-direction: normal;
+        }
+
+
+        #maybe {
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            background: gray;
+            border-radius: 100%;
+            top: 15px;
+            left: 15px;
+            perspective: 300px;
+            perspective-origin: 0% 50%;
+        }
+
+        #angry {
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            background: gray;
+            border-radius: 100%;
+            top: 0px;
+            left: 0px;
+            perspective: 300px;
+            perspective-origin: 0% 50%;
+            animation-name: circle;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-delay: 2s;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circle {
+            0% {
+                transform: scale(0);
+            }
+
+            0% {
+                background-color: #2c4563;
+            }
+
+            70% {
+                background-color: #660b0b
+            }
+        }
+
+
+        @keyframes panda {
+            0% {
+                transform: translateX(0px) rotate(0deg);
+
+            }
+
+            33% {
+                transform: translateX(0px) rotate(360deg);
+
+            }
+
+            66% {
+                transform: translate(0px) rotate(360deg);
+
+            }
+
+            100% {
+                transform: translateX(0px) rotate(0deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="teletabis" class="pikacu">
+        <div id="lucian" class="blitz">
+            <div id="maybe" class="maybenot">
+                <div id="angry" class="happy"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
